@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fair-distribution",
+  "private_key_id": "74fa406f8059e5460fc158b2d5c5e8eba0eef8a5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5azqzv12M4taK\nC7d4+twXbTziM+/QXCW6HzisOpKAisG4E9DX/yOzRBvEKMTEddo39OhdNlgxPUSC\nn5C9DhdgnfUdXsAYFUoDurm9g46usF0cOl+kWnc9NMEZ/Pht6jhcqxVao7JzbvBq\nYGjemiupsPtro8o+4GhzZYwdX9AwVx4GhaDQbSSMAe7mLteR2MDf7n7WiLTMFwlf\ne+anZDyziGE/mtfKEJcx6aFcceX0ml7rZXqaEeUvBOzECPx0wHyR49ow7t05W2ax\nt67dyMjeIq1zAVv3H0gagLkaFbO6T9/LIeXJfUFAL1g4gF8NTvwdcxO3emeDqzW5\n160StY7LAgMBAAECggEAFD1jads8nn7lFVTka6/SgOTQjblGob4VSNpUnjRB6Vx8\nJe2qe+bNYlRPxZtU/e8Gvtnx2A7xFJA6tMQvO/vYSxh4TlhD7BJoLb0JvmlTFLg1\nXw9I1mYg+Ezpu+j/GJxwbOkon71uYtGxgPh81LkL2sOcxj9ZpIBsK8CMyWi75Igb\ng9n5IDlw9Z0farLUOBFA3NVPjRSDqMrCzFQMPJ6DZhBb23pejq4vGdLkO41XBIxi\n//NXzL7hw/1grgueCHooEjNlOglK7h9zLpM7z452V+YzY7uZ8KHkJrYed3xE0xby\nn0JvxCPZpGM8wrrCPlEpg1ZiVON17FF3MRmFZfWMKQKBgQDt8g3TRElWBv6jKPY4\nAlDcG0l93Dm/A0uwahxl28frhzjfAh0mNfcX6TTZfAGwcWmiQyIz19TEMxnckEGt\nYKeRL1sVc6BFbajyCnv/WektNg14Sj+/2zPX8nOrMsyPKNOqZELAU2glxjcHttbV\nOlBaXD1bQzAbpHKYssBHW4O+0wKBgQDHfOCL5ItZm6TaJujNQweJCUAI2rhI4lLl\n29iRQy1iBmq+dE42Lx4aeK0e6fFOkmoTIbFjzRM8cpsjKkRZ0QweXyjkIZ+lruyd\nAYQKgARNnUrGAFx+OebRUi2cv111J74fe2kATsZAPK43X+qSmENNrAFD/PdxY3Zx\njXNVxiqlKQKBgQDKqnx0EZmVGGgSeHUex3ovv14dQVI+C4SQQhDmAQiK56Xc7GP/\ng79uMke9Zg3aRv7+Icgj+BVU92Fzp7sI/WY8FuWxo8ZC3GAlqCBtIhulUoCukC80\nLnQ93lf+3Um2NcPzQWpJfcEbS3TbsTPScdS24hGwhc2X/b1NqhJztNLF2QKBgCr3\nttXq8Cjo4WUrpFEx8tmNaIF/utnYBcsEw2zmb0wB3dQP8RiypWVGQOO7uAIYf0iH\npVG9xjrq5Id6fyZpZJbWIFSi+WQSfVyECxDH6iVdj9F+Gm4FwrWrYa+1eEfXu5fE\nWSV70i/b4hqDSl8w9K4yMkOWpSWDKuvib8k12dGhAoGALGVIGKU7f8XA69ElXp0O\nMyGzZxaVxER5HONznWZFGtglK4SfxeditXVPOO3glIMEZSzF9FL2D6lfCCIE/SwI\nDtjX02ZwDnamp9O42UBQseLAWW0+81flmztJyN3+dm0XmLXe3Lij7Pj5ubU1ne2b\nVjDm6wvelD6qINqf5Q7n2e0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "diabot@fair-distribution.iam.gserviceaccount.com",
+  "client_id": "113098036047590922329",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/diabot%40fair-distribution.iam.gserviceaccount.com"
+}
