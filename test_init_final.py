@@ -177,7 +177,7 @@ def init():
 	file_data5 = file_data5.decode('utf-8')
 	kill_inputData = file_data5.split('\n')
 
-	item_inidata = repo.get_contents("kill_list.ini")
+	item_inidata = repo.get_contents("item_list.ini")
 	file_data6 = base64.b64decode(item_inidata.content)
 	file_data6 = file_data6.decode('utf-8')
 	item_inputData = file_data6.split('\n')
@@ -251,15 +251,21 @@ def init():
 	for i in range(len(kill_inputData)):
 		tmp_kill_Data.append(kill_inputData[i].rstrip('\r'))
 		fk.append(tmp_kill_Data[i][:tmp_kill_Data[i].find(' ')])
-		fk.append(tmp_kill_Data[i][tmp_kill_Data[i].find(' ')+1:)
-		kill_Data.append(fk)     #kill_Data[0] : 척살명단   kill_Data[1] : 죽은횟수
+		fk.append(tmp_kill_Data[i][tmp_kill_Data[i].find(' ')+1:])
+		try:
+			kill_Data[fk[0]] = int(fk[1])
+		except:
+			pass
 		fk = []
 
 	for i in range(len(item_inputData)):
 		tmp_item_Data.append(item_inputData[i].rstrip('\r'))
 		fi.append(tmp_item_Data[i][:tmp_item_Data[i].find(' ')])
-		fi.append(tmp_item_Data[i][tmp_item_Data[i].find(' ')+1:)
-		item_Data.append(fi)     #item_Data[0] : 이름   item_Data[1] : 아이템 개수
+		fi.append(tmp_item_Data[i][tmp_item_Data[i].find(' ')+1:])
+		try:
+			item_Data[fi[0]] = int(fi[1])
+		except:
+			pass
 		fi = []
 
 
@@ -862,7 +868,7 @@ async def LadderFunc(number, ladderlist, channelVal):
 async def init_data_list(filename, first_line : str = "-----------"):
 	try :
 		contents = repo.get_contents(filename)
-		repo.update_file(contents.path, "updated" + str(filename), first_line, contents.sha)
+		repo.update_file(contents.path, "deleted list " + str(filename), first_line, contents.sha)
 		print ('< 데이터 초기화 >')
 	except GithubException as e :
 		print ('save error!!')
@@ -880,7 +886,7 @@ async def data_list_Save(filename, first_line : str = "-----------",  save_data 
 
 	try :
 		contents = repo.get_contents(filename)
-		repo.update_file(contents.path, "updated" + str(filename), output_list, contents.sha)
+		repo.update_file(contents.path, "updated " + str(filename), output_list, contents.sha)
 	except GithubException as e :
 		print ('save error!!')
 		print(e.args[1]['message']) # output: This repository is empty.
@@ -2340,13 +2346,13 @@ while True:
 			return
 
 	################ 킬 차감 ################ 
-	@client.command(name=command[32][0], aliases=command[32][1:]) 
+	@client.command(name=command[33][0], aliases=command[33][1:]) 
 	async def killSubtract_(ctx, *, args : str = None):
 		if ctx.message.channel.id == basicSetting[7] or ctx.message.channel.id == basicSetting[18]:
 			global kill_Data
 
 			if not args:
-				return await ctx.send(f'{command[32][0]} [아이디] 혹은 {command[32][0]} [아이디] [횟수] 양식에 맞춰 입력해주세요!', tts = False)
+				return await ctx.send(f'{command[33][0]} [아이디] 혹은 {command[33][0]} [아이디] [횟수] 양식에 맞춰 입력해주세요!', tts = False)
 
 			input_data = args.split()
 			
@@ -2360,7 +2366,7 @@ while True:
 				except ValueError:
 					return await ctx.send(f'[횟수]는 숫자로 입력바랍니다')
 			else:
-				return await ctx.send(f'{command[32][0]} [아이디] 혹은 {command[32][0]} [아이디] [횟수] 양식에 맞춰 입력해주세요!', tts = False)
+				return await ctx.send(f'{command[33][0]} [아이디] 혹은 {command[33][0]} [아이디] [횟수] 양식에 맞춰 입력해주세요!', tts = False)
 
 			if kill_name in kill_Data:
 				if kill_Data[kill_name] < int(count):
